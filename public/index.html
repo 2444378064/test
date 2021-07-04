@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <meta name="Keywords" content="熳点教育,烘焙培训,熳点烘焙培训学校,熳点烘焙,西点烘焙培训，熳点教育官网,西点师,烘焙师，烘焙培训机构,烘焙网校,烘焙直播公开课">
+  <meta name="Description"
+    content="广州熳点教育科技有限公司是一家产、教一体化的集团公司，熳点烘焙机构开创了一人一机教学模式，小班教学，快速创业，除了学习技术，还有店面管理运营实训课程。拥有标准化的管理流程、产品流程、服务流程、推广流程、销售流程。旗下品牌包括：熳点烘焙连锁店、熳点烘焙培训、熳点网络教学系统、熳点资本。">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>熳点烘焙培训学校</title>
+</head>
+<script>
+  // if (window.name != 'ad_app6') {
+  //   var r = document.referrer;
+  //   r = r.toLowerCase(); //转为小写
+  //   var aSites = new Array('google.', 'baidu.', 'soso.', 'so.', '360.', 'yahoo.', 'youdao.', 'sogou.', 'gougou.');
+  //   var b = false;
+  //   for (i in aSites) {
+  //     if (r.indexOf(aSites[i]) > 0) {
+  //       b = true;
+  //       break;
+  //     }
+  //   }
+
+  //   if (b) {
+  //     self.location = '要跳转的网址';
+  //     window.adworkergo = 'ad_app6';
+  //   }
+  // }
+
+</script>
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?cbda38ff24df7301a7eb6757368810cb";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+  var initKST = () => {
+    var url = window.location.href;
+    var head = document.head;
+    console.log(head);
+    var scriptTab = document.createElement("script");
+    var targetUrl = "";
+    if (url.indexOf("360") != -1) {
+      scriptTab.src = "https://rytk20.kuaishang.cn/bs/ks.j?cI=906697&fI=126835&ism=1";
+    } else if (url.indexOf("sogou") != -1) {
+      scriptTab.src = "https://rytk20.kuaishang.cn/bs/ks.j?cI=906697&fI=126835&ism=1";
+    } else if (url.indexOf("sgppzx") != -1) {
+      scriptTab.src = "https://rytk20.kuaishang.cn/bs/ks.j?cI=906697&fI=126836&ism=1";
+    } else {
+      scriptTab.src = "https://rytk20.kuaishang.cn/bs/ks.j?cI=906697&fI=118348&ism=1";
+    }
+    document.head.append(scriptTab);
+  }
+  initKST();
+</script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
